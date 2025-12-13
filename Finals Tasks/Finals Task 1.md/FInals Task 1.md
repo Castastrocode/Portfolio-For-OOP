@@ -1,16 +1,14 @@
-Finals Lab Task 1
+# Finals Lab Task 1
 
-Source Code:
+# Source Code:
 
 class Car:
-   # Constructor
    def __init__(self, color: str, price: float, size: str):
        self.__color = color
        self.__price = price
        self.__size = size.upper()  # standardize to uppercase
 
 
-   # Getter Methods
    def get_color(self) -> str:
        return self.__color
 
@@ -23,7 +21,6 @@ class Car:
        return self.__size
 
 
-   # Setter Methods
    def set_color(self, color: str) -> None:
        self.__color = color
 
@@ -36,7 +33,6 @@ class Car:
        self.__size = size.upper()
 
 
-   # String representation method
    def __str__(self) -> str:
        # Determine size descriptor
        if self.__size == 'S':
@@ -55,7 +51,6 @@ class Car:
 
 
 
-# Example usage / test
 if __name__ == "__main__":
    choice = input("Which car would you like to Invoke? (1, 2, or 3): ")
 
